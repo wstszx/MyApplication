@@ -25,8 +25,8 @@ import test.myapplication.widget.MyDrawerLayout;
 public class MainActivity extends XActivity
 		implements NavigationView.OnNavigationItemSelectedListener {
 
-	@BindView(R.id.view_pager)
-	ViewPager viewPager;
+//	@BindView(R.id.view_pager)
+//	ViewPager viewPager;
 //	public String[] groupStrings;
 //	public String[][] childStrings;
 	List<Fragment> fragmentList = new ArrayList<>();
@@ -74,12 +74,12 @@ public class MainActivity extends XActivity
 		}
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
+//	@Override
+//	public boolean onCreateOptionsMenu(Menu menu) {
+//		// Inflate the menu; this adds items to the action bar if it is present.
+//		getMenuInflater().inflate(R.menu.main, menu);
+//		return true;
+//	}
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will

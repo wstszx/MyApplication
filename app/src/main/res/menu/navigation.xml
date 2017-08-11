@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_two"
+        android:icon="@drawable/bottom_icon_attention"
+        android:title="@string/bottom_two_string"/>
+
+    <item
+        android:id="@+id/bottom_one"
+        android:icon="@drawable/bottom_icon_recommend"
+        android:title="@string/bottom_one_string"/>
+
+    <item
+        android:id="@+id/bottom_three"
+        android:icon="@drawable/bottom_icon_search"
+        android:title="@string/bottom_three_string"/>
+</menu>
