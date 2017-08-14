@@ -9,6 +9,7 @@ import butterknife.Unbinder;
 import cn.droidlover.xdroidmvp.XDroidConf;
 import cn.droidlover.xdroidmvp.event.BusProvider;
 import cn.droidlover.xdroidmvp.kit.KnifeKit;
+import cn.droidlover.xdroidmvp.log.XLog;
 
 /**
  * Created by wanglei on 2017/1/26.
@@ -39,6 +40,7 @@ public abstract class XLazyFragment<P extends IPresent>
 
     @Override
     public void bindUI(View rootView) {
+        XLog.d(null,"没用");
         unbinder = KnifeKit.bind(this, rootView);
     }
 

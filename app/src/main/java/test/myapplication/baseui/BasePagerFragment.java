@@ -1,10 +1,15 @@
 package test.myapplication.baseui;
 
+import android.os.Bundle;
+import android.view.View;
+
 import butterknife.BindView;
 import cn.droidlover.xdroidmvp.base.SimpleRecAdapter;
+import cn.droidlover.xdroidmvp.log.XLog;
 import cn.droidlover.xdroidmvp.mvp.XLazyFragment;
 import cn.droidlover.xdroidmvp.net.NetError;
 import cn.droidlover.xrecyclerview.XRecyclerContentLayout;
+import cn.droidlover.xrecyclerview.XRecyclerView;
 import test.myapplication.R;
 import test.myapplication.model.GankResults;
 import test.myapplication.present.PBasePager;
@@ -68,5 +73,48 @@ public abstract class BasePagerFragment extends XLazyFragment<PBasePager> {
 			contentLayout.showEmpty();
 			return;
 		}
+	}
+
+	@Override
+	public void initData(Bundle savedInstanceState) {
+		initAdapter();
+		getP().loadData(getType(), 1);
+	}
+
+	protected abstract String getType();
+
+	private void initAdapter() {
+		setLayoutManager(contentLayout.getRecyclerView());
+		contentLayout.getRecyclerView()
+				.setAdapter(getAdapter());
+		contentLayout.getRecyclerView()
+				.setOnRefreshAndLoadMoreListener(new XRecyclerView.OnRefreshAndLoadMoreListener() {
+					@Override
+					public void onRefresh() {
+						getP().loadData(getType(), 1);
+					}
+
+					@Override
+					public void onLoadMore(int page) {
+						getP().loadData(getType(), page);
+					}
+				});
+
+
+		if (errorView == null) {
+			errorView = new StateView(context);
+		}
+		contentLayout.errorView(errorView);
+		// TODO: 2017/8/14  加载时的等待标识,修改第二个参数
+		contentLayout.loadingView(View.inflate(getContext(), 0, null));
+
+		contentLayout.getRecyclerView().useDefLoadMoreView();
+	}
+
+	protected abstract void setLayoutManager(XRecyclerView recyclerView);
+
+	@Override
+	public PBasePager newP() {
+		return new PBasePager();
 	}
 }

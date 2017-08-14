@@ -15,7 +15,7 @@ public class XFragmentAdapter extends FragmentPagerAdapter {
     private List<Fragment> fragmentList = new ArrayList<>();
     private String[] titles;
 
-    public XFragmentAdapter(FragmentManager fm, List<Fragment> fragmentList, String[] titles) {
+    public XFragmentAdapter(FragmentManager fm, List<Fragment> fragmentList) {
         super(fm);
         this.fragmentList.clear();
         this.fragmentList.addAll(fragmentList);

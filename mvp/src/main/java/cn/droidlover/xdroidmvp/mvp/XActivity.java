@@ -33,7 +33,6 @@ public abstract class XActivity<P extends IPresent> extends RxAppCompatActivity 
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         context = this;
-
         if (getLayoutId() > 0) {
             setContentView(getLayoutId());
             bindUI(null);
@@ -43,7 +42,8 @@ public abstract class XActivity<P extends IPresent> extends RxAppCompatActivity 
 
     }
 
-    @Override
+
+	@Override
     public void bindUI(View rootView) {
         unbinder = KnifeKit.bind(this);
     }

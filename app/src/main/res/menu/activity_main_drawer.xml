@@ -2,27 +2,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     >
 
-    <group android:checkableBehavior="single"
+    <!--<group android:checkableBehavior="single"-->
 
-        >
-        <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_book"
+        <!--&gt;-->
+        <!--<item-->
+            <!--android:id="@+id/nav_camera"-->
+            <!--android:icon="@drawable/ic_menu_book"-->
 
-            android:title="杂志"/>
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="视频"/>
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="漫画"/>
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_radio"
-            android:title="听书"/>
-    </group>
+            <!--android:title="one"/>-->
+        <!--<item-->
+            <!--android:id="@+id/nav_gallery"-->
+            <!--android:icon="@drawable/ic_menu_slideshow"-->
+            <!--android:title="内涵段子"/>-->
+        <!--<item-->
+            <!--android:id="@+id/nav_slideshow"-->
+            <!--android:icon="@drawable/ic_menu_gallery"-->
+            <!--android:title="漫画"/>-->
+        <!--<item-->
+            <!--android:id="@+id/nav_manage"-->
+            <!--android:icon="@drawable/ic_menu_radio"-->
+            <!--android:title="听书"/>-->
+    <!--</group>-->
 
     <item android:title="Communicate">
         <menu>
