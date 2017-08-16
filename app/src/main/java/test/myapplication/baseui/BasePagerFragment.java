@@ -26,10 +26,10 @@ import test.myapplication.widget.StateView;
 
 public abstract class BasePagerFragment extends XLazyFragment<PBasePager> {
 
-	StateView errorView;
-
 	@BindView(R.id.xrecycler_contentLayout)
 	XRecyclerContentLayout contentLayout;
+
+	StateView errorView;
 
 	protected static final int MAX_PAGE = 10;
 	Unbinder unbinder;
