@@ -64,7 +64,7 @@ public abstract class BasePagerFragment extends XLazyFragment<PBasePager> {
 		}
 		contentLayout.errorView(errorView);
 //		// TODO: 2017/8/15 修改加载样式，到时修改第二个参数
-		contentLayout.loadingView(View.inflate(getContext(), 0, null));
+		contentLayout.loadingView(View.inflate(getContext(), R.layout.view_loading, null));
 
 		contentLayout.getRecyclerView().useDefLoadMoreView();
 	}

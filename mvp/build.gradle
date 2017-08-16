@@ -30,7 +30,7 @@ dependencies {
 
     compile rootProject.ext.dependencies["xrecyclerview"]
     compile rootProject.ext.dependencies["butterknife"]
-    annotationProcessor  rootProject.ext.dependencies["annotationProcessor"]
+//    annotationProcessor rootProject.ext.dependencies["annotationProcessor"]
     compile rootProject.ext.dependencies["glide"]
 
     compile rootProject.ext.dependencies["gson"]

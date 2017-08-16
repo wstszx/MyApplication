@@ -1,5 +1,21 @@
 [
     {
+        "merged": "C:\\workfile\\MyApplication\\mvp\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\hasee\\.android\\build-cache\\3b926b2e425bde66d7a81139de36f9f254f188ad\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\workfile\\MyApplication\\mvp\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\hasee\\.android\\build-cache\\3b926b2e425bde66d7a81139de36f9f254f188ad\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\workfile\\MyApplication\\mvp\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\hasee\\.android\\build-cache\\3b926b2e425bde66d7a81139de36f9f254f188ad\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\workfile\\MyApplication\\mvp\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\hasee\\.android\\build-cache\\3b926b2e425bde66d7a81139de36f9f254f188ad\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
         "merged": "C:\\Users\\wstszx\\Desktop\\WORKFILE\\MyApplication\\mvp\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action_tombstone.xml",
         "source": "C:\\Android\\.android\\build-cache\\0dc396bdac1a0639788f28cb68ae1ee1514bc0d4\\output\\res\\layout-v21\\notification_action_tombstone.xml"
     },

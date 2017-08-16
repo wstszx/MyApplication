@@ -8,7 +8,7 @@ import cn.droidlover.xdroidmvp.net.XApi;
 
 public class Api {
 	// TODO: 2017/8/1 到时候来修改基础api
-	public static final String API_BASE_URL = "";
+	public static final String API_BASE_URL = "http://gank.io/api/";
 
 	private static GankService gankService;
 
