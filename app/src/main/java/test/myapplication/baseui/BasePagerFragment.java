@@ -34,7 +34,6 @@ public abstract class BasePagerFragment extends XLazyFragment<PBasePager> {
 	protected static final int MAX_PAGE = 10;
 	Unbinder unbinder;
 
-
 	@Override
 	public void initData(Bundle savedInstanceState) {
 		initAdapter();
