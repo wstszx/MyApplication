@@ -1,11 +1,18 @@
 package test.myapplication.baseui;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import butterknife.Unbinder;
 import cn.droidlover.xdroidmvp.base.SimpleRecAdapter;
 import cn.droidlover.xrecyclerview.XRecyclerView;
 import test.myapplication.R;
-import test.myapplication.present.PBasePager;
 
 /**
  * Created by wstszx on 2017/8/14.
@@ -13,22 +20,19 @@ import test.myapplication.present.PBasePager;
 
 public class BookFragment extends BasePagerFragment {
 	private volatile static BookFragment instance = null;
+	Unbinder unbinder;
 
 
 	@Override
-	protected String getType() {
+	public String getType() {
 		return "all";
 	}
 
 	@Override
-	protected void setLayoutManager(XRecyclerView recyclerView) {
+	public void setLayoutManager(XRecyclerView recyclerView) {
 		recyclerView.verticalLayoutManager(context);
 	}
 
-	@Override
-	public int getLayoutId() {
-		return R.layout.book_fragment;
-	}
 
 	@Override
 	public SimpleRecAdapter getAdapter() {
@@ -47,4 +51,7 @@ public class BookFragment extends BasePagerFragment {
 		}
 		return instance;
 	}
+
+
+
 }

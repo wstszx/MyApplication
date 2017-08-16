@@ -40,7 +40,6 @@ public abstract class XLazyFragment<P extends IPresent>
 
     @Override
     public void bindUI(View rootView) {
-        XLog.d(null,"没用");
         unbinder = KnifeKit.bind(this, rootView);
     }
 

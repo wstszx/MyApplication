@@ -14,26 +14,16 @@ import test.myapplication.present.PBasePager;
 public class ListenFragment extends BasePagerFragment{
 
 	private volatile static ListenFragment instance = null;
-	@Override
-	public void initData(Bundle savedInstanceState) {
-
-	}
 
 	@Override
-	protected String getType() {
+	public String getType() {
 		return "all";
 	}
 
 	@Override
-	protected void setLayoutManager(XRecyclerView recyclerView) {
+	public void setLayoutManager(XRecyclerView recyclerView) {
 		recyclerView.verticalLayoutManager(context);
 	}
-
-	@Override
-	public int getLayoutId() {
-		return R.layout.listen_fragment;
-	}
-
 
 	@Override
 	public SimpleRecAdapter getAdapter() {

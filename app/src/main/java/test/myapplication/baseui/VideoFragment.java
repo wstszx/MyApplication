@@ -13,24 +13,15 @@ import test.myapplication.present.PBasePager;
 
 public class VideoFragment extends BasePagerFragment {
 	private volatile static VideoFragment instance = null;
-	@Override
-	public void initData(Bundle savedInstanceState) {
-
-	}
 
 	@Override
-	protected String getType() {
+	public String getType() {
 		return "all";
 	}
 
 	@Override
-	protected void setLayoutManager(XRecyclerView recyclerView) {
+	public void setLayoutManager(XRecyclerView recyclerView) {
 		recyclerView.verticalLayoutManager(context);
-	}
-
-	@Override
-	public int getLayoutId() {
-		return R.layout.video_fragment;
 	}
 
 	@Override

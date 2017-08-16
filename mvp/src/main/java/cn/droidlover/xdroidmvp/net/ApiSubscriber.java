@@ -7,6 +7,7 @@ import org.json.JSONException;
 
 import java.net.UnknownHostException;
 
+import butterknife.BindView;
 import io.reactivex.subscribers.ResourceSubscriber;
 
 
@@ -15,7 +16,6 @@ import io.reactivex.subscribers.ResourceSubscriber;
  */
 
 public abstract class ApiSubscriber<T extends IModel> extends ResourceSubscriber<T> {
-
 
     @Override
     public void onError(Throwable e) {

@@ -14,26 +14,16 @@ import test.myapplication.present.PBasePager;
 public class CartoonFragment extends BasePagerFragment{
 
 	private volatile static CartoonFragment instance = null;
-	@Override
-	public void initData(Bundle savedInstanceState) {
-
-	}
 
 	@Override
-	protected String getType() {
+	public String getType() {
 		return "all";
 	}
 
 	@Override
-	protected void setLayoutManager(XRecyclerView recyclerView) {
+	public void setLayoutManager(XRecyclerView recyclerView) {
 		recyclerView.verticalLayoutManager(context);
 	}
-
-	@Override
-	public int getLayoutId() {
-		return R.layout.cartoon_fragment;
-	}
-
 
 	@Override
 	public SimpleRecAdapter getAdapter() {
