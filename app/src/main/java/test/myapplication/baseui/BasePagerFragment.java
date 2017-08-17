@@ -1,16 +1,15 @@
 package test.myapplication.baseui;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import cn.droidlover.xdroidmvp.base.SimpleRecAdapter;
-import cn.droidlover.xdroidmvp.log.XLog;
 import cn.droidlover.xdroidmvp.mvp.XLazyFragment;
 import cn.droidlover.xdroidmvp.net.NetError;
 import cn.droidlover.xrecyclerview.XRecyclerContentLayout;
@@ -26,13 +25,14 @@ import test.myapplication.widget.StateView;
 
 public abstract class BasePagerFragment extends XLazyFragment<PBasePager> {
 
-	@BindView(R.id.xrecycler_contentLayout)
-	XRecyclerContentLayout contentLayout;
 
 	StateView errorView;
 
 	protected static final int MAX_PAGE = 10;
 	Unbinder unbinder;
+	@Nullable
+	@BindView(R.id.contentLayout)
+	XRecyclerContentLayout contentLayout;
 
 	@Override
 	public void initData(Bundle savedInstanceState) {
@@ -41,7 +41,6 @@ public abstract class BasePagerFragment extends XLazyFragment<PBasePager> {
 	}
 
 	private void initAdapter() {
-		XLog.d("", "initAdapter");
 		setLayoutManager(contentLayout.getRecyclerView());
 		contentLayout.getRecyclerView()
 				.setAdapter(getAdapter());
@@ -62,7 +61,7 @@ public abstract class BasePagerFragment extends XLazyFragment<PBasePager> {
 		if (errorView == null) {
 			errorView = new StateView(context);
 		}
-		contentLayout.errorView(errorView);
+//		contentLayout.errorView(errorView);
 //		// TODO: 2017/8/15 修改加载样式，到时修改第二个参数
 		contentLayout.loadingView(View.inflate(getContext(), R.layout.view_loading, null));
 
